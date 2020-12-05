@@ -1,0 +1,50 @@
+<html>
+<head>
+       <title>Another Simple PHP-MySQL Program</title>
+</head>
+
+<body bgcolor="white">
+
+<h3>Connecting to stores7 using MySQL/PHP</h3>
+
+<hr>
+
+<p>
+Please enter the name of a manufacturer.
+The only manufacturers in the database are:
+<ul>
+	<li>Anza</li>
+	<li>Hero</li>
+	<li>Husky</li>
+	<li>Karsten</li>
+	<li>Nikolus</li>
+	<li>Norge</li>
+	<li>ProCycle</li>
+	<li>Shimara</li>
+	<li>Smith</li>
+</ul>
+
+<p>
+
+<form action="findManu.php" method="POST">
+
+<input type="text" name="manu"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+<hr>
+
+<p>
+<a href="findManu.txt" >Contents</a>
+of this page.
+
+<p>
+<a href="findManuPHP.txt" >Contents</a>
+of the PHP page that gets called.
+(And the <a href="connectionData.txt" >connection data</a>,
+kept separately for security reasons.)
+
+
+</body>
+</html>
