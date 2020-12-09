@@ -1,36 +1,66 @@
 <html>
 <head>
-       <title>Another Simple PHP-MySQL Program</title>
+	<title>CIS451 Final Project</title>
 </head>
 
 <body bgcolor="white">
 
-<h3>Connecting to stores7 using MySQL/PHP</h3>
+	<h3>CIS 451 Final Project<b>: index.html</b></h3> <h5>by Jack Sanders and Stephanie Schofield</h5>
 
 <hr>
-
+<h4>User Guide:</h4>
 <p>
-Please enter the name of a manufacturer.
-The only manufacturers in the database are:
+Step 1: signup
 <ul>
-	<li>Anza</li>
-	<li>Hero</li>
-	<li>Husky</li>
-	<li>Karsten</li>
-	<li>Nikolus</li>
-	<li>Norge</li>
-	<li>ProCycle</li>
-	<li>Shimara</li>
-	<li>Smith</li>
+	<li>make a general account</li>
+	<li>choose to be either an artist, venue, or user</li>
+</ul>
+step 2: create availabilities as an artist
+<ul>
+	<li>click the add availabilities button</li>
+	<li>enter times you are free to perform vie dropdown menu</li>
+	<li>click add availabilities until you are done adding availabilites</li>
+	<li>we have created sample data for you so don't have to create all the data yourself</li>
+</ul>	
+step 3: create gigs as a venue
+<ul>
+        <li>click add availabilities buttonc</li>
+        <li>enter times you are free to perform vie dropdown menu</li>
+        <li>click add availabilities until you are done adding availabilites</li>
+        <li>we have created sample data for you so don't have to create all the data yourself</li>
+</ul>
+step 4: view gigs as a user
+<ul>
+        <li>click add availabilities buttonc</li>
+        <li>enter times you are free to perform vie dropdown menu</li>
+        <li>click add availabilities until you are done adding availabilites</li>
+        <li>we have created sample data for you so don't have to create all the data yourself</li>
+</ul>
+
+step 5: view summary data as an admin
+<ul>
+        <li>choose from the summary buttons at the bottom of the page</li>
+        <li>this will give you a general sense of data being collected</li>
 </ul>
 
 <p>
+<hr>
+<h4> signup </h4>
 
-<form action="findManu.php" method="POST">
 
-<input type="text" name="manu"> <br>
-<input type="submit" value="submit">
-<input type="reset" value="erase">
+<form action="login.php" method="POST">
+ First Name: <input type="text" name="fname"><br>
+ Last Name: <input type="text" name="lname"><br>
+ Email: <input type="text" name="email"><br>
+ Username: <input type="text" name="username"><br>
+ Password: <input type="text" name="password"><br>
+ <label for="type">Choose a user type:</label>
+ <select id="type" name="type">
+	<option value="user">general user</option>
+    	<option value="artist">artist</option>
+    	<option value="venue">venue</option>
+ </select>
+ <input type="submit" value="submit">
 </form>
 
 <hr>
